@@ -1,1 +1,6 @@
-所有的
+1.所有的.cu文件需要在matlab环境下编译,方式为：mexcuda +文件名.cu 编译后得到相应后缀为mexw64的文件
+
+2.运行run.m批量编译
+
+3.conv2d1.cu,deconv2d1.cu,dilconv2d1.cu相比于conv2d.cu,deconv2d.cu,dilconv2d.cu区别为前者矩阵乘法模块为自己写的，
+  后者为调用cublas库的api计算，效率更高。
